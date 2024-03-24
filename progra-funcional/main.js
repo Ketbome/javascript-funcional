@@ -43,3 +43,7 @@ const concat = nums.concat([6, 7]); // [1, 2, 3, 4, 5, 6, 7]
 const slice = nums.slice(1, 4); // [2, 3, 4]
 const indexOf = nums.indexOf(3); // 2
 const includes = nums.includes(3); // true
+
+console.log(nums.slice(1, 6));
+
+console.log("hola".length);
