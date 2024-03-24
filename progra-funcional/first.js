@@ -5,9 +5,22 @@ function first() {
 }
 
 function test() {
-  assert(first() === 2);
+  assert(first() === 2, "No es igual");
 
   console.log("All tests pass");
 }
 
-test();
+function esPrimo(num) {
+  if (num <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(esPrimo(7));
+console.log(esPrimo(2));
