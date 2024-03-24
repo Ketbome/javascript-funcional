@@ -27,6 +27,20 @@ async function postData(url, data) {
   }
 }
 
+async function getDatas(url) {
+  try {
+    options = {
+      method: "GET",
+    };
+    response = await fetch("http://localhost:3000" + url, options);
+    data = await response.json();
+    return data;
+  } catch {
+    throw new Error("Error en fetch");
+  }
+}
+
 module.exports = {
   getData,
+  getDatas,
 };

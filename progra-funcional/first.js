@@ -22,5 +22,14 @@ function esPrimo(num) {
   return true;
 }
 
-console.log(esPrimo(7));
-console.log(esPrimo(2));
+function testPrimos() {
+  assert(esPrimo(9) === false, "No es primo");
+  assert(esPrimo(10) === false, "No es primo");
+  assert(esPrimo(17) === true, "Es primo");
+  assert(esPrimo(39) === false, "Es primo");
+  assert(esPrimo(90) === false, "No es primo");
+
+  console.log("All tests pass");
+}
+
+testPrimos();
