@@ -1,5 +1,5 @@
 const { getData } = require("./fetch");
 
-getData("/")
+getData("/a")
   .then((data) => console.log(data))
-  .catch((error) => console.error(error));
+  .catch((error) => console.log(error));

@@ -46,4 +46,5 @@ const includes = nums.includes(3); // true
 
 console.log(nums.slice(1, 6));
 
-console.log("hola".length);
+let cadena = "hola".split("").reverse().join("");
+console.log(cadena);

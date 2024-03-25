@@ -1,21 +1,8 @@
-function mergeAlternately(word1, word2) {
-  let maxLength = word1.length;
-  if (maxLength < word2.length) {
-    maxLength = word2.length;
-  }
-  let mergedWord = "";
-  console.log(maxLength);
-  for (let i = 0; i < maxLength; i++) {
-    if (word1.length > i) {
-      mergedWord += word1[i];
-      console.log("entre");
-    }
-    if (word2.length > i) {
-      mergedWord += word2[i];
-    }
-  }
-  return mergedWord;
-}
+const personas = [
+  { nombre: "Juan", edad: 25 },
+  { nombre: "María", edad: 30 },
+  { nombre: "Pedro", edad: 20 },
+];
 
-const result = mergeAlternately("hol", "chaooo");
-console.log(result);
+const persona = personas.find((p) => p.nombre == "Juan");
+console.log(persona);
